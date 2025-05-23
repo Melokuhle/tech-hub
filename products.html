@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-</head>
+    <head>
+        <title> TechVibe - Products</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
     <body>
-    <nav class="navbar">
-     <h2 class"logo">
-
-
+        <!----This is navigation bar---->
+        <nav class="navbar">
+            <div class="nav-container">
+                <h2 class="logo"> TechVibe</h2>
+                <ul class="nav-menu">
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="products.html">Products</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                    <li> <a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+       
+        <main class="main-content">
+            <div class="container">
+                <h1 class="page-title"> Our Products<h1>
+                     <!----Filter Buttons------->
+                     <div class="filters">
+                        <button class="filter-btn active" data-category="all">All Products</button>
+                        <button class="filter-btn active" data-category="phones">Phones</button>
+                        <button class="filter-btn active" data-category="laptops">Laptops</button>
+                        <button class="filter-btn active" data-category="accessories">Accessories</button>
+                    </div>
+                    <!----Products will appera here------>
+                    <div class="products-grid" id="products-grid"> 
+                        <!-------JavaScript will fill this----->   
+                    </div>
+            </div>
+        </main>
+        <!----This is where we'll show featured products----->
+        <section class="featured">
+            <div class="container">
+                    <b><h2>Featured Products</h2></b>
+                    <!----Products will appear here with JavaScript-->
+            </div>
+        </section>
+        <!----Footer--->
+        <footer class="footer">
+            <b><p>&copy; 2025 TechVibe. All rights reserved.</p></b>
+        </footer>
+        <script src="script.js"></script>
     </body>
 
 </html>
-
